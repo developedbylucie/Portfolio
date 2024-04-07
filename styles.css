@@ -1,0 +1,273 @@
+/*Version mobile-----------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+main {
+    position: relative;
+    top: 60px;
+    margin: 0 5px 76px 5px;
+}
+
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body { font-family: sans-serif; }
+  
+  .gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+
+
+
+
+
+/* En-tête */
+header {
+    /* padding: 5px; */
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+#container-header {
+    background-image: url(images//arboretum.jpg);
+}
+#entete {
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(4px);
+}
+#entete a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+} 
+#img-logo {
+    width: 40px;
+}
+
+
+
+
+
+
+/* navigation */
+.menu {
+    background-color: gainsboro;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 2px solid black;
+    z-index: 5;
+}
+.menu > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 15px; */
+    text-align: center;
+    padding-top: 5px;
+}
+.menu > ul li {
+    list-style: none;
+}
+.menu a {
+    text-decoration: none;
+}
+.menu p, .menu a {
+    box-sizing: border-box;
+    color: black;
+}
+
+
+
+
+/* lien menu */
+.menu #menu-deroulant {
+	display: inline-block;
+	/* vertical-align: top; */
+}
+.menu #menu-deroulant ul {
+	background-color: gainsboro;
+    opacity:0;
+    z-index: -1;
+    position: fixed;
+    bottom: -100px;
+    padding-bottom: 170px;
+    max-height: 0;
+	overflow: hidden;
+    transition: all 1s;
+    width: 34%;
+}
+.menu #menu-deroulant:hover ul {
+	opacity: 1;
+    max-height: 15%;
+	/* transition: 1s; */
+    bottom: 20px;
+}
+.menu #menu-deroulant li {
+    padding: 10% 5px 14px;
+    font-size: 14px;
+}
+.menu #menu-deroulant a:hover {
+    color: purple;  
+}
+
+
+.menu figure {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    cursor: pointer;
+}
+.menu figcaption {
+    margin-top: 3px;
+    font-size: 13px;
+}
+.menu figcaption:hover {
+    color: red;
+    cursor: pointer;
+}
+.icon-menu {
+    width: 30px;
+    margin-top: 3px;
+}
+
+
+
+
+/* Projets universitaires */
+.section {
+    padding: 5px;
+}
+.section h3 {
+    margin: 20px 0 10px;
+}
+
+.section .categorie {
+    display: inline-block;
+    background: gainsboro;
+    width: 100%;
+}
+.section .categorie:hover {
+    border-bottom: 7px solid white;
+}
+.section .categorie ul {
+    background-color: gainsboro;
+    opacity:0;
+    max-height: 0;
+	overflow: hidden;
+    position: relative;
+    transition: all 1s;
+    list-style: none;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 5px;
+    /* width: 34%; */
+}
+.section .categorie:hover ul {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.section h4, .section a {
+    display: block;
+	color: black;
+	text-decoration: none;
+	box-sizing: border-box;
+    padding: 3px 0;
+}
+
+.section .categorie:hover h4 {
+    
+}
+.section a:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+
+/* Projets personnels */
+#projet-perso {
+  
+}
+
+
+
+
+
+
+
+/* section Contact */
+.section-contact li {
+    list-style: none;
+}
+
+
+
+
+
+
+
+/* Pied de page */
+footer {
+    margin-bottom: 76px;
+    padding: 5px 5px 0;
+}
+footer ul li {
+    list-style: none;
+}
+
+
+
+
+
+/*Version Tablette-----------*/
+@media screen and (min-width: 481px) {
+
+
+
+
+
+
+}
+
+
+
+
+/*Version Desktop--------------*/
+@media screen and (min-width: 961px) {
+
+
+
+}
